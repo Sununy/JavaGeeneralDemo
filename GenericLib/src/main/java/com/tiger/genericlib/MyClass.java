@@ -12,6 +12,9 @@ import com.tiger.genericlib.Ggerenal.Orange;
 import com.tiger.genericlib.Glimit.RestrictClass;
 import com.tiger.genericlib.Gmethod.GenericMethod;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Java语言中的泛型则不一样，它只在程序源码中存在，
  * 在编译后的字节码文件中，就已经替换为原来的原生类型（Raw Type，也称为裸类型）了，
@@ -65,6 +68,16 @@ public class MyClass {
         cc.setFruit(new HongFuShi());
         //报错
 //        cc.setFruit(new Fruits());
+
+//        List<?> mylist = new ArrayList<>();
+//        List<String> list = new ArrayList<>();
+//        List<Object> objectList = new ArrayList<>();
+//
+//        objectList = list;
+//        mylist = list;
+//        Object o = mylist.get(0);
+//        String s = list.get(0);
+
 
     }
     public static void print(GnericFruit<Fruits> p){
